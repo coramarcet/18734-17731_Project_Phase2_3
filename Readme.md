@@ -76,9 +76,11 @@ we set **the final TPR requirement 0.4 for both val and final** (grades for resu
 
 2. **final report**. For those who does not change the method and already get full points in phase 2 report, there is no need to submit another report.
 
+**Note**: The report will account for 1/3 and the presentation for 2/3 of the total scores in Phase 3. Please submit a new report only if it includes updated methodology, significant new content, or otherwise meaningful revisions since phase2 submission. If the report remains unchanged, then submission is not required, and the score for your report will constitute the same percentage of your final grade as your presentation. (So please don't submit the same or similar one.)
+
 The content within will be announced later.
 
-The exact deadline is listed on https://www.codabench.org/competitions/11238/#/phases-tabLinks. It is a more precise deadline than which was announced today in class. We will end val phase on Nov 29 11:59pm, and final will last from Nov 30 0:05am to 8pm. You can only submit one final submission so make sure it's correct. You could download the one with the best val score and submit to final, but it's up to you. We will release the final scores and ranks after Nov 30 8pm. If you have made a mistake, email me in time and we won't allow changes after the deadline.
+The exact deadline is listed on https://www.codabench.org/competitions/11238/#/phases-tabLinks. It is a more precise deadline than which was announced today in class. We will end val phase on Nov 29 11:59pm, and final will last from Nov 30 0:05am to Dec 1 10:30AM. You can only submit one final submission so make sure it's correct. You could download the one with the best val score and submit to final, but it's up to you. We will release the final scores and ranks after Dec 1 10:30AM. If you have made a mistake, email me in time and we won't allow changes after the deadline.
 
 and if you have questions, asks me ASAP to schedule the meeting with me, please don't start at the last minute as I may not be able to help then.
 
@@ -89,4 +91,5 @@ and if you have questions, asks me ASAP to schedule the meeting with me, please 
 1. increase the number of shadow models. You could try with different numbers and see the relationship between the number of the performances. Show that in the final presentation if you have. To pass phase 2, only 2 shadow models are sufficient. If you cannot pass with 5 or more shadow models, think about how to do effective data processing and curation.
 2. collecting multiple features which all help to further improve, I personally think only very a few features would help, but feel free to try.
 3. use quantile regression. Some of you may not fully understand this, here is an implementation that you could refer to. I have verified its effectiveness. Important: quantile regression only works when you have some distinguish scores, then it may improve further. it mainly serves as an efficient method to get rid of shadow models, but combining both may help. Link: https://github.com/iamgroot42/mimir/blob/main/mimir/attacks/quantile.pyLinks. *The input of these models is text, and output is a quantile threshold.* 
- 
+
+

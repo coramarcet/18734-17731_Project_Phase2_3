@@ -72,13 +72,12 @@ The scores of Results are given by (if your TPR is x):
 we set **the final TPR requirement 0.4 for both val and final** (grades for results will be decided on the lower one). Those who have fulfilled the requirement may only prepare the slides and write up. Others could try with the hints above. and as we announced before, top 3 groups will have bonus points.
 
 ### deliverables:
-1. **slides for presentation**. We will randomly split you into 7 groups on Monday Dec 1, and 6 groups on Wednesday Dec 3. The detailed ordering will be announced later. you will have 8 min to present and 3 min for QA, overtime will get one point deducted.
+1. **slides for presentation**. 
+2. **final report**.
 
-2. **final report**. For those who does not change the method and already get full points in phase 2 report, there is no need to submit another report.
+**Note**: Please refer to canvas for the detailed requirements and rubrics.
 
-**Note**: The report will account for 1/3 and the presentation for 2/3 of the total scores in Phase 3. Please submit a new report only if it includes updated methodology, significant new content, or otherwise meaningful revisions since phase2 submission. If the report remains unchanged, then submission is not required, and the score for your report will constitute the same percentage of your final grade as your presentation. (So please don't submit the same or similar one.)
-
-The content within will be announced later.
+**IMPORTANT**: Please make sure each group only have one submission, remove your submission from the leaderboard if your group already has one! It will mislead the others, and for final ranks, we will only choose the lowest submission if your group submit more than one.
 
 The exact deadline is listed on https://www.codabench.org/competitions/11238/#/phases-tabLinks. It is a more precise deadline than which was announced today in class. We will end val phase on Nov 29 11:59pm, and final will last from Nov 30 0:05am to Dec 1 10:30AM. You can only submit one final submission so make sure it's correct. You could download the one with the best val score and submit to final, but it's up to you. We will release the final scores and ranks after Dec 1 10:30AM. If you have made a mistake, email me in time and we won't allow changes after the deadline.
 

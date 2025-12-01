@@ -7,8 +7,8 @@ from pathlib import Path
 from datasets import load_dataset, Dataset
 from transformers import AutoTokenizer
 
-OUTDIR = "wiki_json"
 SEED = 101
+OUTDIR = f"data/shadow_{SEED}"
 TRAIN_PER_SRC = 10_000
 MIN_TOKENS = 25
 
@@ -71,9 +71,30 @@ def main():
 
     out_dir = Path(OUTDIR)
     train_json = [{"text": ex["text"]} for ex in wiki_train]
-    dump_json(out_dir / "train_finetune.json", train_json)
+    dump_json(out_dir / "train.json", train_json)
 
     print("[OK] JSON saved to", OUTDIR)
+
+    ############################################################
+    # Generate non-member test.json using same cleaning pipeline
+    ############################################################
+
+    print(f"[Seed {SEED}] Creating non-member test set...")
+
+    # reuse full cleaned dataset but exclude member IDs if needed
+    all_idxs = list(range(len(wiki)))
+    random.Random(SEED + 999).shuffle(all_idxs)
+
+    # choose first N non-member samples
+    TEST_SIZE = 2000
+    test_idxs = all_idxs[:TEST_SIZE]
+
+    test_samples = [{"text": wiki[i]["text"]} for i in test_idxs]
+
+    with open(out_dir / "test.json", "w") as f:
+        json.dump(test_samples, f, indent=2)
+
+    print(f"[OK] Saved {len(test_samples)} non-member samples to {out_dir/'test.json'}")
 
 if __name__ == "__main__":
     main()

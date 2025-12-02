@@ -7,7 +7,7 @@ from pathlib import Path
 from datasets import load_dataset, Dataset
 from transformers import AutoTokenizer
 
-SEED = 103
+SEED = 102
 OUTDIR = f"data/shadow_{SEED}"
 TRAIN_PER_SRC = 10_000
 MIN_TOKENS = 25
